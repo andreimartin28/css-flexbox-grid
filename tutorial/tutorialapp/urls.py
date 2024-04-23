@@ -1,0 +1,35 @@
+from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
+from tutorialapp import views
+
+urlpatterns = [
+
+    path("",
+         views.index,
+         name="index"),
+
+    path('flex/',
+         views.flex,
+         name='flex'),
+
+    path('grid/',
+         views.grid,
+         name='grid'),
+
+    path('gridd/',
+         views.gridd,
+         name='gridd'),
+
+    path('grid_3/',
+         views.grid_3,
+         name='grid_3'),
+
+    path('grid_4/',
+         views.grid_4,
+         name='grid_4')
+
+]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
