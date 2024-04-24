@@ -31,3 +31,18 @@ def grid_3(request):
 def grid_4(request):
     return render(request,
                   'tutorialapp/grid_4.html')
+
+
+def grid_5(request):
+    return render(request,
+                  'tutorialapp/grid_5.html')
+
+
+def article_layout(request):
+    return render(request,
+                  'tutorialapp/article_layout.html')
+
+
+def grid_flexbox(request):
+    return render(request,
+                  'tutorialapp/grid_flexbox.html')
